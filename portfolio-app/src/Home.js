@@ -213,8 +213,8 @@ export default function Home() {
         </section>
 
         <section id="contact" className="relative z-10 py-20 px-6 text-center bg-gray-990">
-            <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-            <p className="text-gray-400 mb-8">I’d love to connect! Reach me at:</p>
+            <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
+            <p className="text-gray-400 mb-8">I'd love to connect. You can contact  me at: </p>
             <div className="flex justify-center gap-6">
             <button
                 onClick={(e) => {
