@@ -22,13 +22,13 @@ export default function Home() {
             </a>
         </section>
 
-        <section id="about" className="relative bg-black z-10 py-20 px-6 mx-auto justify-center border-l-8  border-black flex hover:border-white transition duration-1000 text-center">
+        <section id="about" className="relative bg-black bg-opacity-70 z-10 py-20 px-6 mx-auto justify-center flex text-center">
             <div id="about-text" className="max-w-3xl">
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <p className="text-gray-400 leading-relaxed">
                 I’m an aerospace engineering student passionate about space
-                simulations, orbital mechanics, and software for spacecraft systems.
-                I enjoy building tools that bridge engineering and coding.
+                simulations, orbital mechanics, spacecraft systems, and propulsion.
+                I enjoy building tools that bridge engineering, programming, and physics.
             </p>
             </div> 
         </section>
@@ -95,7 +95,7 @@ export default function Home() {
 
         <section
             id="skills"
-            className="relative z-10 bg-black py-24 px-8 md:px-20 lg:px-40 border-l-8 border-black hover:border-white transition duration-1000 text-center"
+            className="relative z-10 bg-black bg-opacity-70 py-24 px-8 md:px-20 lg:px-40 hover:border-white  text-center"
         >
             <h2 className="text-4xl font-bold mb-16 tracking-wide">Skills & Coursework</h2>
 

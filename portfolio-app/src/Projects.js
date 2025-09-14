@@ -19,7 +19,7 @@ export default function Projects() {
                     
                     Each position vector is scaled down to suit the radius of the Earth in the simulation. This coordinate is plotted as a satellite in the simulation, and is a part of the rotation system described above. To prevent any excess requests to CelesTrak, TLEs are requested only every 12 hours. During the downtime, a numerical model is used to estimate the orbit of each satellite to show the live movement. In this case, I used Verlet Integration which is a numerical method that is really good at conserving energy, which keeps the satellites orbit from drifting. Using a Euler approximation for instance would have led to a build-up of positional inaccuracies over time.  
                     
-                    Keep in mind, this simulation is made such that the coordinate system is fixed to Earth-Centered Inertial (ECI) cordinates. In simple terms, the coordinate system does not rotate with the earth (inertial), and the axes are fixed in space with the origin at the center of mass. This is typically the system you would want to use for spacecraft, as it simplifies the orbital mechanics by a great amount. 
+                    Keep in mind, this simulation is made such that the coordinate system is fixed to Earth-Centered Inertial (ECI) coordinates. In simple terms, the coordinate system does not rotate with the earth (inertial), and the axes are fixed in space with the origin at the center of mass. This is typically the system you would want to use for spacecraft, as it simplifies the orbital mechanics by a great amount. 
                     
                     This live tracker can simulate tens of thousands of satellites at once, albeit with a reduced frame rate under high computational stress. I plan on fully migrating the visual engine to C++ instead of a Cython (C++/Python) implementation to increase performance.`
     },
@@ -75,7 +75,7 @@ export default function Projects() {
           target="_blank"
           className="text-white-400 font-bold hover:underline"
         >
-          View on GitHub →
+          View source on GitHub →
         </a>
       </div>
 
