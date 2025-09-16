@@ -2,6 +2,9 @@ import { useState } from "react";
 import satMp4500 from "./assets/Active_Sat_Demo_500.mp4"
 import satOgv500 from "./assets/Active_Sat_Demo_500.ogv"
 import satWebm500 from "./assets/Active_Sat_Demo_500.webm"
+import lunarsimMp4 from "./assets/Lunar-sim.mp4"
+import lunarsimOgv from "./assets/Lunar-sim.ogv"
+import lunarsimWebm from "./assets/Lunar-sim.webm"
 
 export default function Projects() {
   const projects = [
@@ -23,14 +26,14 @@ export default function Projects() {
                     
                     This live tracker can simulate tens of thousands of satellites at once, albeit with a reduced frame rate under high computational stress. I plan on fully migrating the visual engine to C++ instead of a Cython (C++/Python) implementation to increase performance.`
     },
-    // {
-    //   name: "MATLAB Lunar Simulation",
-    //   description: "Information will be published soon",
-    //   media: ["a", "a", "a"],
-    //   link: "https://github.com/aadhav0818/lunar-simulation",
-    //   skills: ["MATLAB", "Numerical Methods", "Vectorization", "Time-series Plotting", "Orbital Mechanics", "Descent/Launch Dynamics"],
-    //   explanation: `Coming Soon`
-    // },
+    {
+      name: "MATLAB Lunar Simulation",
+      description: "Information will be published soon",
+      media: [lunarsimMp4, lunarsimOgv, lunarsimWebm],
+      link: "https://github.com/aadhav0818/lunar-simulation",
+      skills: ["MATLAB", "Numerical Methods", "Vectorization", "Time-series Plotting", "Orbital Mechanics", "Descent/Launch Dynamics"],
+      explanation: `Coming Soon`
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -80,6 +83,7 @@ export default function Projects() {
       </div>
 
       <video
+        key={activeIndex}
         id="my-player"
         class="video-js"
         preload="auto"
