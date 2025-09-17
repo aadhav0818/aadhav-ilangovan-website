@@ -12,7 +12,7 @@ export default function Home() {
             Aadhav Ilangovan
             </h1>
             <p className="mt-4 text-lg md:text-2xl text-gray-400">
-            Aerospace Engineering @ UT Austin
+            Aerospace Engineering Honors @ UT Austin
             </p>
             <a
             href="/projects"
